@@ -1,4 +1,5 @@
 //#region imports.
+
 // Apollo.
 import { ApolloServer } from "apollo-server-express";
 import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core';
@@ -49,7 +50,11 @@ const allowedOrigin = {
   port: ORIGIN_PORT,
 };
 
-const origin = `http://${allowedOrigin.address}:${allowedOrigin.port}`;
+// const origin = `https://${allowedOrigin.address}:${allowedOrigin.port}`;
+const origin = [
+  `http://localhost:4200`,
+  `https://studio.apollographql.com`,
+];
 
 // Express.
 // Http + socket.io.
