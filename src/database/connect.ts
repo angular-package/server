@@ -14,7 +14,7 @@ console.log('MONGODB_URI', mongooseUrl);
 
 // Create connection.
 export const connection = mongoose.createConnection(mongooseUrl, {
-  keepAlive: true,
+  // keepAlive: true,
   socketTimeoutMS: 0,
   // useNewUrlParser: true,
   // useUnifiedTopology: true,
